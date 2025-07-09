@@ -1,14 +1,10 @@
 # llama3_api.py
 
-# 🔗 Handles connection to Groq's LLaMA3 API for generating AI responses.
-
-import os
 import requests
-from dotenv import load_dotenv
+import streamlit as st  # ✅ For reading secrets securely in Streamlit Cloud
 
-# Load API key from .env file
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# 🔐 Securely pull Groq API key from Streamlit Secrets
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 def call_llama3(prompt):
     """
