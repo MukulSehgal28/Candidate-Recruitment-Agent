@@ -30,19 +30,19 @@ with col1:
         st.switch_page("pages/Analyze.py")
 
 with col2:
-    if st.button("💬 Resume Q&A"):
-        # Navigate to the Resume Q&A module
-        st.switch_page("pages/Resume_QA.py")
-
-with col3:
     if st.button("🧠 Interview Questions"):
         # Navigate to the Interview Questions Generator
         st.switch_page("pages/Interview_Questions.py")
 
-with col4:
-    if st.button("🛠️ Resume Improvement"):
+with col3:
+    if st.button("💪 Resume Improvement"):
         # Navigate to the Resume Improvement tool
         st.switch_page("pages/Resume_Improvement.py")
+
+with col4:
+    if st.button("💬 Resume Q&A"):
+        # Navigate to the Resume Q&A module
+        st.switch_page("pages/Resume_QA.py")
 
 # ====== SHORT FEATURE LIST ======
 st.markdown("---")  # Divider line
@@ -51,7 +51,7 @@ st.markdown("""
 - 🔍 **Analyze resumes** for job fit based on predefined or custom job descriptions  
 - 💬 **Ask questions** to the AI about resume content  
 - 🧠 **Generate interview questions** tailored to specific job roles  
-- 🛠️ **Get improvement suggestions** to enhance your resume section-wise  
+- 💪 **Get improvement suggestions** to enhance your resume section-wise  
 """)
 
 # ====== ABOUT THE APP EXPANDER ======
