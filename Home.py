@@ -58,9 +58,15 @@ st.markdown("""
 # Show information about privacy and usage
 with st.expander("🔐 About This App"):
     st.markdown("""
-    - This application runs **entirely on your local machine**  
-    - No resume data is uploaded to third-party servers  
-    - Ideal for practice, portfolio review, or interview preparation  
+**Your privacy, your control.**
+
+- 🖥️ **Runs 100% locally:** All processing happens on your computer—your data never leaves your device.
+- 🔒 **No cloud uploads:** Resumes and personal information are **never** sent to any external server.
+- 🎯 **Perfect for:** Interview prep, portfolio reviews, and practicing job applications in a safe environment.
+- 🚫 **No sign-up required:** Use instantly, with zero setup or registration.
+
+*Enjoy peace of mind while preparing for your next career opportunity!*
+
     """)
 
 # ====== FOOTER SECTION ======
