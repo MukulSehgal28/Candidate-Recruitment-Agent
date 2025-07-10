@@ -44,14 +44,7 @@ Resume:
 
                 st.success("✅ Answer Ready!")
                 st.markdown("### 🤖 AI's Response")
-
-                # Split long multi-question answers into bullets or slides
-                lines = answer.split("\n")
-                question_blocks = [line.strip("• ").strip() for line in lines if line.strip()]
-
-                for idx, q in enumerate(question_blocks, 1):
-                    with st.expander(f"📌 Q{idx}"):
-                        st.write(q)
+                st.markdown(answer)
 
 # === Back button to Home ===
 back_button()
