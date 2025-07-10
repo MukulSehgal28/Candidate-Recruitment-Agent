@@ -64,5 +64,5 @@ with st.expander("🔐 About This App"):
     """)
 
 # ====== FOOTER SECTION ======
-# Add GitHub and contact info for credibility
-st.markdown("🌐 [GitHub Repo](https://github.com)  |  📧 Contact: you@example.com")
+
+st.markdown("---")  # Divider line
