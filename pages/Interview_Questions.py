@@ -66,17 +66,23 @@ Resume:
 Job Role:
 {role}
 """
-
             # Get response from LLaMA3
             result = query_llama3(prompt)
 
             # Display
             st.success("✅ Done! Your questions are ready.")
             st.markdown("### 📋 Interview Questions")
-            st.markdown(result)
+
+            # Organize and present each question in collapsible expanders
+            lines = result.split("\n")
+            question_blocks = [line.strip("\u2022 ").strip() for line in lines if line.strip()]
+
+            for idx, q in enumerate(question_blocks, 1):
+                with st.expander(f"📌 Q{idx}"):
+                    st.write(q)
 
             # Option to download
-            st.download_button("📥 Download Questions", result, file_name="interview_questions.txt")
+            st.download_button("📅 Download Questions", result, file_name="interview_questions.txt")
 
 # === Back Button ===
 back_button()
